@@ -34,13 +34,8 @@ done
 
 shift $((OPTIND - 1))
 
-tag=latest
-if [ $# -ge 1 ] ; then
-  tag=$1
-fi
-
-readonly REPO=kunst1080/x11
-readonly CONTAINER=$REPO:$tag
+readonly REPO=kunst1080/x11-wm
+readonly CONTAINER=$REPO:$1
 
 docker run -it --privileged \
 	$option_rm \

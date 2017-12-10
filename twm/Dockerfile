@@ -1,4 +1,4 @@
-FROM kunst1080/x11:latest
+FROM kunst1080/x11-base:latest
 MAINTAINER kunst1080 kontrapunkt1080@gmail.com
 
 USER root
