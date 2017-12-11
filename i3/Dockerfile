@@ -7,9 +7,20 @@ RUN apt-get update \
         && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
             i3 \
             i3status \
-            dmenu \
+            i3blocks \
             j4-dmenu-desktop \
+            rxvt-unicode-256color \
+            feh \
+            compton \
+            parcellite \
+            volumeicon-alsa \
+            xsel \
+            mirage \
+            imagemagick \
+            evince \
+            lxrandr \
 	&& rm -rf /var/lib/apt/lists/*
 
 USER $USER
+RUN echo "exec i3" >> ~/.xinitrc
 CMD [ "/usr/bin/startx" ]
