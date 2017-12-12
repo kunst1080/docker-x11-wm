@@ -42,6 +42,7 @@ docker run -it --privileged \
 	-v /run/udev:/run/udev \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /usr/lib/locale/locale-archive:/usr/lib/locale/locale-archive:ro \
+    -e LANG=$LANG \
 	$option_user \
 	$option_mount_home \
 	$CONTAINER \
