@@ -8,6 +8,7 @@ RUN apt-get update \
             i3 \
             i3status \
             i3blocks \
+            dmenu \
             j4-dmenu-desktop \
             rxvt-unicode-256color \
             feh \
