@@ -1,5 +1,8 @@
 fcitx-autostart
 
-[ -f ~/.xinitrc.local ] . ~/.xinitrc.local
+for i in ~/.xinitrc.*
+do
+    . $i
+done
 
 exec i3
