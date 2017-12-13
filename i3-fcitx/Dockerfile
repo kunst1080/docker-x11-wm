@@ -27,6 +27,6 @@ ENV XMODIFIERS @im=fcitx
 ENV QT_IM_MODULE fcitx
 ENV GTK_IMMODULE fcitx
 
-RUN sed -i '1s/^/fcitx-autostart\n/' ~/.xinitrc
+ADD xinitrc .xinitrc
 
 CMD [ "/usr/bin/startx" ]

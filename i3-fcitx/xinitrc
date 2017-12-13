@@ -1,0 +1,5 @@
+fcitx-autostart
+
+[ -f ~/.xinitrc.local ] . ~/.xinitrc.local
+
+exec i3

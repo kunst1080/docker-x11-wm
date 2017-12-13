@@ -22,5 +22,5 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 USER $USER
-RUN echo "exec i3" >> ~/.xinitrc
+ADD xinitrc .xinitrc
 CMD [ "/usr/bin/startx" ]
