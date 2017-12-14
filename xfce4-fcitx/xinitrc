@@ -1,0 +1,8 @@
+fcitx-autostart
+
+for i in ~/.xinitrc.*
+do
+    . $i
+done
+
+exec startxfce4
