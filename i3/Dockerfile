@@ -4,9 +4,8 @@ MAINTAINER kunst1080 kontrapunkt1080@gmail.com
 USER root
 
 RUN apt-get update \
-        && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+        && DEBIAN_FRONTEND=noninteractive apt-get install -y \
             i3 \
-            i3status \
             i3blocks \
             dmenu \
             j4-dmenu-desktop \
@@ -17,7 +16,6 @@ RUN apt-get update \
             volumeicon-alsa \
             xsel \
             mirage \
-            imagemagick \
             evince \
             lxrandr \
 	&& rm -rf /var/lib/apt/lists/*
