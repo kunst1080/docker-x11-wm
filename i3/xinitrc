@@ -1,4 +1,4 @@
-for i in ~/.xinitrc.*
+[ -f ~/.xinitrc.* ] && for i in ~/.xinitrc.*
 do
     . $i
 done
