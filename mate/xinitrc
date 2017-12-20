@@ -1,0 +1,6 @@
+[ -f ~/.xinitrc.* ] && for i in ~/.xinitrc.*
+do
+    . $i
+done
+
+exec mate-session
