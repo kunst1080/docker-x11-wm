@@ -7,7 +7,7 @@ RUN apt-get update \
             i3blocks \
             dmenu \
             j4-dmenu-desktop \
-            rxvt-unicode-256color \
+            lxterminal \
             feh \
             compton \
             parcellite \
