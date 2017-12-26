@@ -40,6 +40,7 @@ readonly CONTAINER=$REPO:$1
 docker run -it --privileged \
 	$option_rm \
 	-v /run/udev:/run/udev \
+	-v /var/run/dbus/system_bus_socket:/var/run/dbus/system_bus_socket \
 	-v /etc/localtime:/etc/localtime:ro \
 	-v /usr/lib/locale/locale-archive:/usr/lib/locale/locale-archive:ro \
     -e LANG=$LANG \
