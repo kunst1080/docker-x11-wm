@@ -3,4 +3,4 @@ do
     . $i
 done
 
-exec mate-session
+exec $(dbus-launch mate-session)

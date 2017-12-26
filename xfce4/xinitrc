@@ -3,4 +3,4 @@ do
     . $i
 done
 
-exec startxfce4
+exec $(dbus-launch --sh-syntax startxfce4)
