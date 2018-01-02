@@ -3,4 +3,4 @@ do
     . $i
 done
 
-exec $(dbus-launch --sh-syntax i3)
+exec dbus-launch --exit-with-session i3
