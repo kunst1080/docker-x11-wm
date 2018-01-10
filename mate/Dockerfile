@@ -9,4 +9,3 @@ RUN apt-get update \
 
 ADD xinitrc /xinitrc
 RUN ln -s /xinitrc /root/.xinitrc
-CMD [ "/usr/bin/startx" ]

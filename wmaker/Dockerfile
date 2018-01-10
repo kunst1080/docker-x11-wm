@@ -14,5 +14,3 @@ RUN apt-get update \
             fonts-ipafont \
             im-config \
 	&& rm -rf /var/lib/apt/lists/*
-
-CMD [ "/usr/bin/startx" ]
